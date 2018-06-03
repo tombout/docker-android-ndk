@@ -6,7 +6,7 @@ Create a Dockerfile in your project that inherits from this image. In the Docker
 tools and prepend the toolchain/bin directory to $PATH. 
 
 ```dockerfile
-FROM tombout/android-ndk:r17
+FROM tombout/android-ndk:latest
 ENV NDK_TOOLCHAIN="/opt/ndk-toolchain"
 RUN $ANDROID_NDK_HOME/build/tools/make_standalone_toolchain.py \
     --arch arm --api 26 \
